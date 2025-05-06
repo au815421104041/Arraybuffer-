@@ -1,3 +1,4 @@
+
 import scala.collection.mutable.ArrayBuffer
 object Numbers {
   def main(args: Array[String]): Unit = {
@@ -15,12 +16,12 @@ object Numbers {
     println(s"8: $arr")
     println(s"9: ${arr.mkString(",")}")
     val range = for (x <- arr if x >= 1 && x <= 5) yield x
-    println(s"10: Numbers between 1 and 5: ${range.mkString(",")}")
-    arr -= 3
-    println(s"11: After removing 3: $arr")
+    println(s"10:  1 to 5 number: ${range.mkString(",")}")
+    arr -= 3 
+    println(s"11: array removing 3: $arr")
     arr.insert(3, 3)
-    println(s"12: After inserting 3 at index 3: $arr")
+    println(s"12: After inserting 3: $arr")
     arr.remove(0, 4)
-    println(s"13: After removing first 4 elements: $arr")
+    println(s"13: removing first 4 elements: $arr")
   }
 }
